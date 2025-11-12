@@ -1,0 +1,209 @@
+/* CSS Reset */
+html, body, header, nav, main, footer, h1, h2, h3, p, ul, li, section, aside, figure, figcaption {
+  margin: 0; padding: 0; border: 0;
+}
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f9fbff;
+  color: #111;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  background: #fff;
+  padding: 4% 5%;
+  border-bottom: 4px solid #e5e9fc;
+}
+
+h1 { font-size: 1.75rem; margin: 0.25em 0; }
+.logo { width: 120px; display: block; margin: 0.5rem auto; }
+
+nav { background: #373684; }
+nav ul { list-style: none; text-align: left; }
+nav li { border-top: 1px solid rgba(255,255,255,0.25); }
+nav a { display: block; color: #fff; text-decoration: none; padding: 0.75em 1em; font-weight: 600; }
+nav a.current { background: rgba(0,0,0,0.15); }
+
+main { padding: 1rem; }
+.card { background:#fff; border:1px solid #e5e9fc; border-radius:8px; padding:1rem; margin:0.75rem 0; }
+
+.mobile { display: block; }
+.tab-desk { display: none; }
+
+/* Instructor styles */
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #373684;
+  text-shadow: 3px 3px 10px #8280cb;
+}
+
+figure {
+  position: relative;
+  max-width: 275px;
+  margin: 2% auto;
+  border: 8px solid #373684;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(55, 54, 132, 0.7);
+  color: #fff;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Tablet */
+@media screen and (min-width: 620px) {
+  nav ul { text-align: center; }
+  nav li { display: inline-block; border-top: none; font-size: 1.5em; border-right: 1px solid #e5e9fc; }
+  nav li:last-child { border-right: none; }
+  nav li a { padding: 0.25em 0.5em; }
+  .tab-desk { display: inline; }
+  .mobile { display: none; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  aside { grid-column: 1 / span 2; }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px), print {
+  header { padding: 2%; }
+  nav li a { padding: 0.5em 1.5em; }
+  nav li a:hover { color: #373684; background: #e5e9fc; }
+
+  .grid { grid-template-columns: repeat(4, 1fr); }
+  aside { grid-column: 1 / span 4; }
+  figcaption { font-size: 1em; }
+}
+
+
+/* ========== LAB 10 UPDATES (November 5, 2025) ========== */
+
+/* Mobile Viewport Updates */
+.tab-desk, #menu-links {
+    display: none;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* Tablet Viewport Updates */
+@media (min-width: 600px) {
+    .mobile, .mobile-nav {
+        display: none;
+    }
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+}
+
+/* Desktop Viewport Updates */
+@media (min-width: 1000px) {
+    nav li a:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+/* ========== LAB 10 FIXES: Mobile/Tablet/Desktop Nav ========== */
+
+/* Base mobile behavior */
+.mobile-nav { 
+    display: block;
+    padding: 0.5rem 1rem;
+}
+#menu-icon { 
+    cursor: pointer; 
+    display: inline-block;
+    font-size: 1.5rem;
+}
+#menu-links a { 
+    display: block;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+/* Hide desktop nav on mobile */
+.tab-desk, #menu-links { display: none; }
+
+/* Tablet */
+@media (min-width: 600px) {
+    .mobile-nav { display: none; }       /* hide mobile bar */
+    .tab-desk { display: block; }        /* show desktop/tablet nav */
+    nav li a { 
+        padding: 0.5rem 0.75rem;
+        display: inline-block;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+    nav li a:hover { transform: scale(1.2); }
+}
+
+
+/* ===== LAB 10 FINAL FIX: Ensure Mobile Viewport Behavior ===== */
+.mobile-nav { display: block; }
+#menu-links { display: none; }
+.tab-desk { display: none; }
+
+@media (min-width: 600px) {
+    .mobile-nav { display: none; }
+    .tab-desk { display: block; }
+}
+
+@media (min-width: 1000px) {
+    nav li a:hover { transform: scale(1.2); }
+}
+
+
+/* ===== LAB 11 FOOTER STYLES ===== */
+
+/* Mobile: social media icons */
+footer .social a img {
+    width: 30px;
+    height: 30px;
+    margin: 0.5em;
+}
+
+/* Tablet Viewport: social layout */
+@media (min-width: 600px) {
+    /* Tablet Viewport: Style rules for social media icons */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .copyright {
+        flex: 1;
+    }
+    footer .social {
+        display: flex;
+        gap: 10px;
+    }
+}

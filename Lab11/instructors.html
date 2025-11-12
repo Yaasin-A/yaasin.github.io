@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Our instructors are knowledgeable and professional.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Updated: November 5, 2025 |  File: instructors.html | Date: October 09, 2025 -->
+  <title>Instructors | Strike a Chord</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <!-- Updated: November 5, 2025 |  Mobile Navigation -->
+<nav class="mobile-nav">
+    <a id="menu-icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="contact.html">Contact</a>
+        <a href="rentals.html">Rentals</a>
+    </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<nav class="mobile-nav">
+    <a id="menu-icon" onclick="hamburger()">
+        <span>&#9776;</span>
+    </a>
+    <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="contact.html">Contact</a>
+        <a href="rentals.html">Rentals</a>
+    </div>
+</nav>
+<header>
+    <h1><span class="tab-desk">&#9835;&#9835;</span>Strike a Chord<span class="tab-desk">&#9835;&#9835;</span></h1>
+    <img src="images/music-notes.png" alt="Music notes" class="logo" />
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="current" href="instructors.html">Instructors</a></li>
+      <li><a href="template.html">Template</a></li>
+    </ul>
+  </nav>
+  <main class="grid">
+    <aside>
+      <p>Meet our talented instructors who bring their passion for music to every lesson.</p>
+    </aside>
+    <figure><img src="images/guitar-instructor.jpg" alt="guitar instructor"><figcaption>Jack Williams, Guitar</figcaption></figure>
+    <figure><img src="images/electric-guitar-instructor.jpg" alt="electric guitar instructor"><figcaption>Jose Ramirez, Guitar</figcaption></figure>
+    <figure><img src="images/piano-instructor.jpg" alt="piano instructor"><figcaption>Elisa Petrov, Piano</figcaption></figure>
+    <figure><img src="images/violin-instructor.jpg" alt="violin instructor"><figcaption>Maya Hill, Violin</figcaption></figure>
+  </main>
+  
+<footer>
+    <div class="copyright">
+        <p>&copy; <span id="year"></span> Strike a Chord • Chicago, IL</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook-logo.png" alt="Facebook logo">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter-logo.png" alt="Twitter logo">
+        </a>
+    </div>
+</footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

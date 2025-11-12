@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="We provide music lessons for piano, guitar, electric guitar, bass guitar, ukelele, and the violin. Your first two lessons are free.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Updated: November 5, 2025 |  File: lessons.html | Date: October 09, 2025 -->
+  <title>Piano, Guitar, Violin Lessons | Strike a Chord</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <!-- Updated: November 5, 2025 |  Mobile Navigation -->
+<nav class="mobile-nav">
+    <a id="menu-icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="contact.html">Contact</a>
+        <a href="rentals.html">Rentals</a>
+    </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<nav class="mobile-nav">
+    <a id="menu-icon" onclick="hamburger()">
+        <span>&#9776;</span>
+    </a>
+    <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="contact.html">Contact</a>
+        <a href="rentals.html">Rentals</a>
+    </div>
+</nav>
+<header>
+    <h1><span class="tab-desk">&#9835;&#9835;</span>Strike a Chord<span class="tab-desk">&#9835;&#9835;</span></h1>
+    <img src="images/music-notes.png" alt="Music notes" class="logo" />
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html" class="current">Lessons</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
+      <li><a href="template.html">Template</a></li>
+    </ul>
+  </nav>
+  <main id="info" class="grid">
+    <section id="piano" class="card">
+      <h2>Piano Lessons</h2>
+      <img src="images/piano-instructor.jpg" alt="Student at a piano lesson" class="lesson-img">
+<p>We offer piano lessons for all ages and levels. Build note-reading, rhythm, and technique while developing confidence.</p>
+      <h4>Piano Spring Performance</h4>
+      <audio controls>
+        <source src="media/piano.mp3" type="audio/mp3">
+        <source src="media/piano.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="guitar" class="card">
+      <h2>Guitar Lessons</h2>
+      <img src="images/guitar-instructor.jpg" alt="Student at a guitar lesson" class="lesson-img">
+<p>Learn acoustic or electric guitar with experienced instructors. Focus on chords, strumming, and music theory.</p>
+      <h4>Guitar Winter Performance</h4>
+      <audio controls>
+        <source src="media/guitar.mp3" type="audio/mp3">
+        <source src="media/guitar.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="violin" class="card">
+      <h2>Violin Lessons</h2>
+      <img src="images/violin-instructor.jpg" alt="Student at a violin lesson" class="lesson-img">
+<p>Develop posture, bowing, and performance skills across classical and contemporary styles.</p>
+      <h4>Violin Spring Performance</h4>
+      <audio controls>
+        <source src="media/violin.mp3" type="audio/mp3">
+        <source src="media/violin.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+  </main>
+  
+<footer>
+    <div class="copyright">
+        <p>&copy; <span id="year"></span> Strike a Chord • Chicago, IL</p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook-logo.png" alt="Facebook logo">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="images/twitter-logo.png" alt="Twitter logo">
+        </a>
+    </div>
+</footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
